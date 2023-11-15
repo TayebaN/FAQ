@@ -1,0 +1,65 @@
+.accordion {
+  background: #f2f1f4;
+  color: #19171c;
+}
+
+.title {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin: 2px;
+  padding: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.title:hover {
+  background-color: bisque;
+  color: black;
+  cursor: pointer;
+}
+
+.titleSection {
+  border: 1px solid #ddd;
+  cursor: pointer;
+  margin: 2px;
+  padding: 15px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+
+.titleSection:hover {
+  background-color: blueviolet;
+  color: whitesmoke;
+  cursor: pointer;
+}
+
+i {
+  transition: transform;
+  transition-duration: 300ms;
+  padding-right: 15px;
+}
+
+.active i {
+  transform: rotate(180deg);
+  transition: transform;
+  transition-duration: 300ms;
+}
+
+.description {
+  display: none;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+.description:hover {
+  background-color: darkseagreen;
+  color: black;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.active + .description {
+  display: block;
+}
